@@ -57,7 +57,7 @@ template HashChecker() {
     // prevent double signaling
     nullifierHash <== calculateNullifierHash.out;
 
-    assert(hash == calculatedHash);
+    hash === calculatedHash;
     
 }
 
